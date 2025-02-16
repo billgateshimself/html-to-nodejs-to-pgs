@@ -7,15 +7,65 @@
 .container
 {
     display: grid;
+    grid-template-areas: 
+        '. . . . item1 item1 . . . .'
+        '. . . . item2 item3 . . . .'
+        '. . . item4 item4 item4 item4 . . .'
+        '. . . item5 item5 item5 item5 . . .';
+    border: #f5ecd5;
+    border-width: 2px;
+    border-style: dotted;
+    font-family: 'Courier New';
+
+}
+
+.container > div
+{
+    background-color: grey;
+    /*text-align: center;
+    padding: 20px 0;
+    font-size: 30px;*/
+}
+
+#item1 
+{ 
+    grid-area: item1; 
+    border: blueviolet;
+    border-width: 1px;
+    border-style: solid;
+}
+#item2 { grid-area: item2; background-color: white; margin-top:1rem;}
+#item3 { grid-area: item3; text-align:right; background-color: white; margin-top:1rem;}
+#item4 { grid-area: item4; background-color: palegreen; margin-top: 1rem; }
+#item5 
+{   grid-area: item5; 
+    text-align:center;
+    margin-top: 1rem;
+    
+}
+
+.itemflex
+{
+    display: flex;
+    flex-direction: rows;
+    justify-content: center;
+    /*border: 2px solid yellow;*/
+    
+}
+
+.itemflex2
+{
+    padding-top: 1rem;
 }
 
 h1 
 {
     text-align: center;
     color: blueviolet;
-    background-color: aqua;
-    font-family: myFont;
-    font-size: 50px;
+    text-shadow: 1px 1px black;
+    /*-webkit-text-stroke: 0.5px white;
+    background-color: aqua;*/
+    font-size: 24px;
     /*font-family: 'Star Jedi', 'Courier New';*/
 }
         
@@ -23,14 +73,14 @@ button, a
 {
     background-color:mistyrose;
     border: black;
-    border-width: 5px;
+    border-width: 2px;
+    border-style: solid;
     color: #272DE3;
     padding: 15px 32px;
     text-align:center;
     text-decoration:none;
     display:inline-block;
     font-size:16px;
-    font-family: 'Courier New';
 }
         
 #displaybox
