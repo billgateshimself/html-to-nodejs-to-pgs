@@ -1,34 +1,41 @@
-        @font-face
-        {
-            font-family: myFont;
-            src: url(Starjedi.ttf)
-        }
-       
-       h1 
-        {
-            text-align: center;
-            color: blueviolet;
-            background-color: aqua;
-            text-decoration: line-through;
-            font-family: myFont;
-            font-size: 50px;
-            /*font-family: 'Star Jedi', 'Courier New';*/
-        }
-        button
-        {
-            background-color:mistyrose;
-            border: none;
-            color: #272DE3;
-            padding: 15px 32px;
-            text-align:center;
-            text-decoration:none;
-            display:inline-block;
-            font-size:16px;
-            font-family: 'Courier New';
-        }
-        #displaybox
-        {
-            font-size:100px;
-            font-family: 'Arial';
-        }
+@font-face
+{
+    font-family: myFont;
+    src: url(Starjedi.ttf)
+}
+
+.container
+{
+    display: grid;
+}
+
+h1 
+{
+    text-align: center;
+    color: blueviolet;
+    background-color: aqua;
+    font-family: myFont;
+    font-size: 50px;
+    /*font-family: 'Star Jedi', 'Courier New';*/
+}
+        
+button, a
+{
+    background-color:mistyrose;
+    border: black;
+    border-width: 5px;
+    color: #272DE3;
+    padding: 15px 32px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:16px;
+    font-family: 'Courier New';
+}
+        
+#displaybox
+{
+    font-size:100px;
+    font-family: 'Arial';
+}
  

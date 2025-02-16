@@ -22,7 +22,7 @@ const pool = new Pool(poolconnect);
 
 // Serve the HTML form
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/merlin.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 // Handle form submission

@@ -46,7 +46,7 @@ app.get('/data', (req, res) => {
 
 // Serve the HTML file
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/merlin.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 // Start the server
